@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="MyEclipse Derby" database="CLASSICCARS" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="EMPLOYEE">
+      <Drawing expanded="true" location="0,0" dimensions="259,191" />
+      <Columns>
+        <Column name="EMPLOYEENUMBER" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="INTEGER" size="10" />
+        </Column>
+        <Column name="LASTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="50" />
+        </Column>
+        <Column name="FIRSTNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="50" />
+        </Column>
+        <Column name="EXTENSION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="10" />
+        </Column>
+        <Column name="EMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="100" />
+        </Column>
+        <Column name="OFFICECODE" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="VARCHAR" size="10" />
+        </Column>
+        <Column name="REPORTSTO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="INTEGER" size="10" />
+        </Column>
+        <Column name="JOBTITLE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR" size="50" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships />
+</ERDiagram>
+
