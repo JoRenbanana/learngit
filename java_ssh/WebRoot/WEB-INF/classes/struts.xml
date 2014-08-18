@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="user" extends="struts-default">
+		<action name="login" class="useraction" method="loginAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc" type="redirectAction">getAlluser</result>
+		</action>
+		<action name="adduser" class="useraction"
+			method="adduserAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc" type="redirectAction">getAlluser</result>
+		</action>
+		
+		
+		
+		<action name="register" class="useraction" method="registerUserAction">
+		<result name="fail">index.jsp</result>
+		<result name="suc">index.jsp</result>
+		</action>
+		
+		
+		
+		
+		<action name="deluser" class="useraction"
+			method="deluserAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc" type="redirectAction">getAlluser</result>
+		</action>
+		<!-- 批量删除 -->
+		<action name="bathdeluser" class="useraction"
+			method="bathdeluserAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc" type="redirectAction">getAlluser</result>
+		</action>
+		<!--多条件查询-->
+		<action name="querybymore" class="useraction"
+			method="querybymoreAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc">admain.jsp</result>
+		</action>
+		<action name="updateuser" class="useraction"
+			method="updateuserAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc" type="redirectAction">getAlluser</result>
+		</action>
+
+		<action name="getAlluser" class="useraction"
+			method="getAlluserAction">
+			<result name="fail">index.jsp</result>
+			<result name="suc">admain.jsp</result>
+		</action>
+
+	</package>
+</struts>
