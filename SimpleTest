@@ -1,6 +1,6 @@
 public class test{
 public static void main(String []args){
 System.out.ptintln("hello");
-System.out.pritnln("git ÐÞ¸ÄºóµÄ");
+System.out.pritnln("git modify");
 }
 }
